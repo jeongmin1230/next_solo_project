@@ -1,0 +1,106 @@
+{
+  "post": [
+    {
+      "id": "abcd",
+      "title": "첫 번째 글 제목 수정",
+      "body": "첫 번째 글 내용 수정"
+    },
+    {
+      "id": "1234",
+      "title": "두 번째 글 제목",
+      "body": "두 번째 글 내용"
+    },
+    {
+      "id": "cc72",
+      "title": "새 글 생성 수정",
+      "body": "내용은 뭘로하징\n수정함니다"
+    },
+    {
+      "id": "2cd4",
+      "title": "240923 새 글 생성",
+      "body": "새 글 생성 내용\n글 내용을 수정 할게요"
+    }
+  ],
+  "comment": [
+    {
+      "id": "0c40",
+      "content": "abcd 댓글1",
+      "postId": "abcd"
+    },
+    {
+      "id": "c562",
+      "content": "abcd 댓글2",
+      "postId": "abcd"
+    },
+    {
+      "id": "8d9f",
+      "content": "abcd 댓글3",
+      "postId": "abcd"
+    },
+    {
+      "id": "c567",
+      "content": "1234의 댓글1",
+      "postId": "1234"
+    },
+    {
+      "id": "9ce4",
+      "content": "ㅎㅇ",
+      "postId": "abcd"
+    },
+    {
+      "id": "6fae",
+      "content": "안녕하세요",
+      "postId": "abcd"
+    },
+    {
+      "id": "4545",
+      "content": "1234에서 새로 작성",
+      "postId": "1234"
+    },
+    {
+      "id": "e9b7",
+      "content": "1234 에서 댓글 입력 창 reset()",
+      "postId": "1234"
+    },
+    {
+      "id": "297c",
+      "content": "1234 에서 댓글 입력 창 reset()?? 안되는데",
+      "postId": "1234"
+    },
+    {
+      "id": "90a8",
+      "content": "1234 에서 뭐야",
+      "postId": "1234"
+    },
+    {
+      "id": "6f90",
+      "content": "1234 에서 뭐야d",
+      "postId": "1234"
+    },
+    {
+      "id": "bf66",
+      "content": "1234 에서 뭐야ddfafdafff",
+      "postId": "1234"
+    },
+    {
+      "id": "4bc2",
+      "content": "안녕하세용?",
+      "postId": "abcd"
+    },
+    {
+      "id": "7c65",
+      "content": "업데이투ㅎㅋ 수정 8",
+      "postId": "cc72"
+    },
+    {
+      "id": "9c5f",
+      "content": "240920 6ㅌ",
+      "postId": "cc72"
+    },
+    {
+      "id": "a935",
+      "content": "240920 3ㅌ",
+      "postId": "cc72"
+    }
+  ]
+}

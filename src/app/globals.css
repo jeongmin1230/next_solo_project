@@ -1,0 +1,60 @@
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 a{
+  padding: 4px;
+  color: gray;
+  text-decoration: none;
+}
+
+body {
+  padding-left: 5px;
+  background-color: lightgray;
+}
+
+.button-item {
+  padding: 4px;
+  display: inline-block; 
+  margin: 2px;
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+.post-list {
+  margin: 4px;
+}
+
+ul, ol {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.comment-input {
+  width: 60%;
+}
+
+.comment-textarea {
+  list-style-type: none;
+  border-bottom: 1px solid black;
+  padding: 8px 0;
+}
+
+.comment-button-container {
+  text-align: right;
+}
+
+.comment-button-item{
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  color: gray;
+  padding: 2px;
+  margin: 4px 0px 0px 4px;
+  font-size: 12px;
+}
