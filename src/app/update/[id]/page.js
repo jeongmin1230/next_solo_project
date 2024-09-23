@@ -9,7 +9,7 @@ export default function Update(props) {
     const [body, setBody] = useState('');
     const id = props.params.id;
     useEffect(()=>{
-        fetch('http://localhost:9999/post/'+id)
+        fetch(process.env.NEXT_PUBLIC_POST_URL+id)
         .then(resp=>resp.json())
         .then(result=> {
             setTitle(result.title);
@@ -29,7 +29,7 @@ export default function Update(props) {
                 },
                 body: JSON.stringify({title, body})
             }
-            fetch('http://localhost:9999/post/'+id, options)
+            fetch(process.env.NEXT_PUBLIC_POST_URL+id, options)
             .then(res=>res.json())
             .then(result=> {
                 router.push(`/read/${result.id}`)

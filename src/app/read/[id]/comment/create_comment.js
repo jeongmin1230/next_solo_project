@@ -19,7 +19,7 @@ export default function CreateComment({ id }) {
         };
 
         try {
-            const response = await fetch(`http://localhost:9999/comment`, options);
+            const response = await fetch(process.env.NEXT_PUBLIC_COMMENT_URL, options);
             const result = await response.json();
 
             if (result && result.id) {

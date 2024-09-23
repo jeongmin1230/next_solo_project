@@ -17,7 +17,7 @@ export default function Create() {
                 },
                 body: JSON.stringify({title, body})
             }
-            fetch('http://localhost:9999/post', options)
+            fetch(process.env.NEXT_PUBLIC_POST_URL, options)
             .then(res=>res.json())
             .then(result=> {
                 router.push(`/read/${result.id}`)

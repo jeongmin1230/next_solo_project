@@ -3,8 +3,8 @@ import EachComment from "./comment/load_comment";
 
 export default async function Read(props) {
     const postId = props.params.id;
-    const post = await fetchData(`http://localhost:9999/post/${postId}`);
-    const comments = await fetchData(`http://localhost:9999/comment`);
+    const post = await fetchData(process.env.NEXT_PUBLIC_POST_URL+postId);
+    const comments = await fetchData(process.env.NEXT_PUBLIC_COMMENT_URL);
     
     const filteredComments = comments.filter(comment => comment.postId == props.params.id);
     return (

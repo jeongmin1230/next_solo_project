@@ -14,7 +14,7 @@ export default function LinkButton() {
             {id ? <>
             <li className="button-item"><Link href={"/update/"+id}>현재 글 수정</Link></li>
             <li className="button-item"><Link href="#" onClick={() => {
-                fetch('http://localhost:9999/post/'+id, {method:'DELETE'})
+                fetch(process.env.NEXT_PUBLIC_POST_URL+id, {method:'DELETE'})
                 .then(resp=>resp.json)
                 .then(() => {
                     router.push('/')

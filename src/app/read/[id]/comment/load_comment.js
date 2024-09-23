@@ -16,7 +16,7 @@ export default function EachComment(props) {
                     {isEditing ? "수정취소" : "수정"}
                 </button>
                 <button className="comment-button-item" onClick={() => {
-                    fetch('http://localhost:9999/comment/' + props.id, { method: 'DELETE' })
+                    fetch(process.env.NEXT_PUBLIC_COMMENT_URL + props.id, { method: 'DELETE' })
                         .then(resp => resp.json())
                         .then(() => {
                             router.refresh();
@@ -50,7 +50,7 @@ function EditArea(props) {
                     },
                     body: JSON.stringify({ content: comment })
                 };
-                fetch('http://localhost:9999/comment/' + props.id, options)
+                fetch(process.env.NEXT_PUBLIC_COMMENT_URL + props.id, options)
                     .then(res => res.json())
                     .then(() => {
                         props.complete();
